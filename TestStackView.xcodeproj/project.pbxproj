@@ -15,6 +15,16 @@
 		C3297AA61C7C1685001E694F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3297AA41C7C1685001E694F /* LaunchScreen.storyboard */; };
 		C3297AB11C7C1685001E694F /* TestStackViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3297AB01C7C1685001E694F /* TestStackViewTests.m */; };
 		C3297ABC1C7C1685001E694F /* TestStackViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3297ABB1C7C1685001E694F /* TestStackViewUITests.m */; };
+		C3297ACD1C7C16A4001E694F /* DPTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3297ACB1C7C16A4001E694F /* DPTabView.m */; };
+		C3297AD11C7C1702001E694F /* DPSSStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3297AD01C7C1702001E694F /* DPSSStackView.m */; };
+		C3297AD21C7C1702001E694F /* DPSSStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3297AD01C7C1702001E694F /* DPSSStackView.m */; };
+		C3297AD31C7C1702001E694F /* DPSSStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3297AD01C7C1702001E694F /* DPSSStackView.m */; };
+		C3297AD71C7C47EE001E694F /* DPSSStackView+UILayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C3297AD61C7C47EE001E694F /* DPSSStackView+UILayout.m */; };
+		C3297AD81C7C47EE001E694F /* DPSSStackView+UILayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C3297AD61C7C47EE001E694F /* DPSSStackView+UILayout.m */; };
+		C3297AD91C7C47EE001E694F /* DPSSStackView+UILayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C3297AD61C7C47EE001E694F /* DPSSStackView+UILayout.m */; };
+		C3297AE21C7C5D8E001E694F /* DPSSStackViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3297AE11C7C5D8E001E694F /* DPSSStackViewProxy.m */; };
+		C3297AE31C7C5D8E001E694F /* DPSSStackViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3297AE11C7C5D8E001E694F /* DPSSStackViewProxy.m */; };
+		C3297AE41C7C5D8E001E694F /* DPSSStackViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3297AE11C7C5D8E001E694F /* DPSSStackViewProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,16 @@
 		C3297AB71C7C1685001E694F /* TestStackViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestStackViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3297ABB1C7C1685001E694F /* TestStackViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestStackViewUITests.m; sourceTree = "<group>"; };
 		C3297ABD1C7C1685001E694F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3297ACA1C7C16A4001E694F /* DPTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTabView.h; sourceTree = "<group>"; };
+		C3297ACB1C7C16A4001E694F /* DPTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTabView.m; sourceTree = "<group>"; };
+		C3297ACC1C7C16A4001E694F /* DPTabViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTabViewProtocol.h; sourceTree = "<group>"; };
+		C3297ACF1C7C1702001E694F /* DPSSStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSSStackView.h; sourceTree = "<group>"; };
+		C3297AD01C7C1702001E694F /* DPSSStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSSStackView.m; sourceTree = "<group>"; };
+		C3297AD41C7C1828001E694F /* DPSSStackViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSSStackViewProtocol.h; sourceTree = "<group>"; };
+		C3297AD51C7C47EE001E694F /* DPSSStackView+UILayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DPSSStackView+UILayout.h"; sourceTree = "<group>"; };
+		C3297AD61C7C47EE001E694F /* DPSSStackView+UILayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DPSSStackView+UILayout.m"; sourceTree = "<group>"; };
+		C3297AE01C7C5D8E001E694F /* DPSSStackViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSSStackViewProxy.h; sourceTree = "<group>"; };
+		C3297AE11C7C5D8E001E694F /* DPSSStackViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSSStackViewProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +121,8 @@
 		C3297A951C7C1685001E694F /* TestStackView */ = {
 			isa = PBXGroup;
 			children = (
+				C3297ACE1C7C16E8001E694F /* DPSSStackView */,
+				C3297AC91C7C16A4001E694F /* DPTabViewController */,
 				C3297A991C7C1685001E694F /* AppDelegate.h */,
 				C3297A9A1C7C1685001E694F /* AppDelegate.m */,
 				C3297A9C1C7C1685001E694F /* ViewController.h */,
@@ -138,6 +160,38 @@
 				C3297ABD1C7C1685001E694F /* Info.plist */,
 			);
 			path = TestStackViewUITests;
+			sourceTree = "<group>";
+		};
+		C3297AC91C7C16A4001E694F /* DPTabViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C3297ACA1C7C16A4001E694F /* DPTabView.h */,
+				C3297ACB1C7C16A4001E694F /* DPTabView.m */,
+				C3297ACC1C7C16A4001E694F /* DPTabViewProtocol.h */,
+			);
+			path = DPTabViewController;
+			sourceTree = "<group>";
+		};
+		C3297ACE1C7C16E8001E694F /* DPSSStackView */ = {
+			isa = PBXGroup;
+			children = (
+				C3297ADA1C7C5D4F001E694F /* DPSSStackViewHelpers */,
+				C3297ACF1C7C1702001E694F /* DPSSStackView.h */,
+				C3297AD01C7C1702001E694F /* DPSSStackView.m */,
+				C3297AD41C7C1828001E694F /* DPSSStackViewProtocol.h */,
+				C3297AD51C7C47EE001E694F /* DPSSStackView+UILayout.h */,
+				C3297AD61C7C47EE001E694F /* DPSSStackView+UILayout.m */,
+			);
+			path = DPSSStackView;
+			sourceTree = "<group>";
+		};
+		C3297ADA1C7C5D4F001E694F /* DPSSStackViewHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				C3297AE01C7C5D8E001E694F /* DPSSStackViewProxy.h */,
+				C3297AE11C7C5D8E001E694F /* DPSSStackViewProxy.m */,
+			);
+			name = DPSSStackViewHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +324,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3297AD11C7C1702001E694F /* DPSSStackView.m in Sources */,
+				C3297ACD1C7C16A4001E694F /* DPTabView.m in Sources */,
 				C3297A9E1C7C1685001E694F /* ViewController.m in Sources */,
+				C3297AD71C7C47EE001E694F /* DPSSStackView+UILayout.m in Sources */,
 				C3297A9B1C7C1685001E694F /* AppDelegate.m in Sources */,
 				C3297A981C7C1685001E694F /* main.m in Sources */,
+				C3297AE21C7C5D8E001E694F /* DPSSStackViewProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +338,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3297AE31C7C5D8E001E694F /* DPSSStackViewProxy.m in Sources */,
+				C3297AD81C7C47EE001E694F /* DPSSStackView+UILayout.m in Sources */,
 				C3297AB11C7C1685001E694F /* TestStackViewTests.m in Sources */,
+				C3297AD21C7C1702001E694F /* DPSSStackView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +349,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3297AE41C7C5D8E001E694F /* DPSSStackViewProxy.m in Sources */,
+				C3297AD91C7C47EE001E694F /* DPSSStackView+UILayout.m in Sources */,
 				C3297ABC1C7C1685001E694F /* TestStackViewUITests.m in Sources */,
+				C3297AD31C7C1702001E694F /* DPSSStackView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
