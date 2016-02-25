@@ -10,6 +10,16 @@
 
 @interface DPSSStackView (UILayout)
 
+@property (nonatomic, weak)     UIScrollView *currScrollView;
+@property (nonatomic, weak)     UIView *headerContainerView;
+@property (nonatomic, weak)     UIView *childeContainerView;
+
+@property (nonatomic)           CGFloat previousYOffset;
+@property (nonatomic)           CGFloat resistanceConsumed;
+
+@property (nonatomic)           NSNumber *expansionResistance;      // default 200
+@property (nonatomic)           CGFloat contractionResistance;    // default 0
+
 - (CGFloat)width;
 - (CGFloat)height;
 - (CGFloat)frameWidth:(CGRect)frame;

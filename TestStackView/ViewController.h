@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DPSSStackView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <DPSSStackViewDataSource,DPTabViewDataSource>
 
+@property (nonatomic, weak) IBOutlet DPSSStackView    *stackView;
 
 @end
 

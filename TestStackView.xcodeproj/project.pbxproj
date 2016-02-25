@@ -25,6 +25,12 @@
 		C3297AE21C7C5D8E001E694F /* DPSSStackViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3297AE11C7C5D8E001E694F /* DPSSStackViewProxy.m */; };
 		C3297AE31C7C5D8E001E694F /* DPSSStackViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3297AE11C7C5D8E001E694F /* DPSSStackViewProxy.m */; };
 		C3297AE41C7C5D8E001E694F /* DPSSStackViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3297AE11C7C5D8E001E694F /* DPSSStackViewProxy.m */; };
+		C32CC8D81C7F7C650092E55B /* DPSSDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC8D71C7F7C650092E55B /* DPSSDelegate.m */; };
+		C32CC8D91C7F7C650092E55B /* DPSSDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC8D71C7F7C650092E55B /* DPSSDelegate.m */; };
+		C32CC8DA1C7F7C650092E55B /* DPSSDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC8D71C7F7C650092E55B /* DPSSDelegate.m */; };
+		C32CC8DD1C7F87870092E55B /* DPTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC8DC1C7F87870092E55B /* DPTableView.m */; };
+		C32CC8DE1C7F87870092E55B /* DPTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC8DC1C7F87870092E55B /* DPTableView.m */; };
+		C32CC8DF1C7F87870092E55B /* DPTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C32CC8DC1C7F87870092E55B /* DPTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +77,10 @@
 		C3297AD61C7C47EE001E694F /* DPSSStackView+UILayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DPSSStackView+UILayout.m"; sourceTree = "<group>"; };
 		C3297AE01C7C5D8E001E694F /* DPSSStackViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSSStackViewProxy.h; sourceTree = "<group>"; };
 		C3297AE11C7C5D8E001E694F /* DPSSStackViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSSStackViewProxy.m; sourceTree = "<group>"; };
+		C32CC8D61C7F7C650092E55B /* DPSSDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSSDelegate.h; sourceTree = "<group>"; };
+		C32CC8D71C7F7C650092E55B /* DPSSDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSSDelegate.m; sourceTree = "<group>"; };
+		C32CC8DB1C7F87870092E55B /* DPTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTableView.h; sourceTree = "<group>"; };
+		C32CC8DC1C7F87870092E55B /* DPTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,12 +131,15 @@
 		C3297A951C7C1685001E694F /* TestStackView */ = {
 			isa = PBXGroup;
 			children = (
+				C32CC8D51C7F7C300092E55B /* DPSSDelegates */,
 				C3297ACE1C7C16E8001E694F /* DPSSStackView */,
 				C3297AC91C7C16A4001E694F /* DPTabViewController */,
 				C3297A991C7C1685001E694F /* AppDelegate.h */,
 				C3297A9A1C7C1685001E694F /* AppDelegate.m */,
 				C3297A9C1C7C1685001E694F /* ViewController.h */,
 				C3297A9D1C7C1685001E694F /* ViewController.m */,
+				C32CC8DB1C7F87870092E55B /* DPTableView.h */,
+				C32CC8DC1C7F87870092E55B /* DPTableView.m */,
 				C3297A9F1C7C1685001E694F /* Main.storyboard */,
 				C3297AA21C7C1685001E694F /* Assets.xcassets */,
 				C3297AA41C7C1685001E694F /* LaunchScreen.storyboard */,
@@ -192,6 +205,15 @@
 				C3297AE11C7C5D8E001E694F /* DPSSStackViewProxy.m */,
 			);
 			name = DPSSStackViewHelpers;
+			sourceTree = "<group>";
+		};
+		C32CC8D51C7F7C300092E55B /* DPSSDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				C32CC8D61C7F7C650092E55B /* DPSSDelegate.h */,
+				C32CC8D71C7F7C650092E55B /* DPSSDelegate.m */,
+			);
+			name = DPSSDelegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,8 +350,10 @@
 				C3297ACD1C7C16A4001E694F /* DPTabView.m in Sources */,
 				C3297A9E1C7C1685001E694F /* ViewController.m in Sources */,
 				C3297AD71C7C47EE001E694F /* DPSSStackView+UILayout.m in Sources */,
+				C32CC8DD1C7F87870092E55B /* DPTableView.m in Sources */,
 				C3297A9B1C7C1685001E694F /* AppDelegate.m in Sources */,
 				C3297A981C7C1685001E694F /* main.m in Sources */,
+				C32CC8D81C7F7C650092E55B /* DPSSDelegate.m in Sources */,
 				C3297AE21C7C5D8E001E694F /* DPSSStackViewProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,9 +363,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3297AE31C7C5D8E001E694F /* DPSSStackViewProxy.m in Sources */,
+				C32CC8DE1C7F87870092E55B /* DPTableView.m in Sources */,
 				C3297AD81C7C47EE001E694F /* DPSSStackView+UILayout.m in Sources */,
 				C3297AB11C7C1685001E694F /* TestStackViewTests.m in Sources */,
 				C3297AD21C7C1702001E694F /* DPSSStackView.m in Sources */,
+				C32CC8D91C7F7C650092E55B /* DPSSDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,9 +376,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3297AE41C7C5D8E001E694F /* DPSSStackViewProxy.m in Sources */,
+				C32CC8DF1C7F87870092E55B /* DPTableView.m in Sources */,
 				C3297AD91C7C47EE001E694F /* DPSSStackView+UILayout.m in Sources */,
 				C3297ABC1C7C1685001E694F /* TestStackViewUITests.m in Sources */,
 				C3297AD31C7C1702001E694F /* DPSSStackView.m in Sources */,
+				C32CC8DA1C7F7C650092E55B /* DPSSDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +507,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestStackView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.intigral.TestStackView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -490,6 +519,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestStackView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.intigral.TestStackView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -562,6 +592,7 @@
 				C3297AC21C7C1685001E694F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3297AC31C7C1685001E694F /* Build configuration list for PBXNativeTarget "TestStackViewTests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +601,7 @@
 				C3297AC51C7C1685001E694F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3297AC61C7C1685001E694F /* Build configuration list for PBXNativeTarget "TestStackViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -578,6 +610,7 @@
 				C3297AC81C7C1685001E694F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

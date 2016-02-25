@@ -14,8 +14,6 @@ static void * const DPSSStackViewKVOContext = (void*)&DPSSStackViewKVOContext;
 
 @interface DPSSStackView () <UIScrollViewDelegate,DPTabViewDelegate>
 {
-    NSInteger _lastSentIndex;
-    NSInteger _currentIndex;
 }
 
 @property (nonatomic)           BOOL inited;
@@ -61,10 +59,8 @@ static void * const DPSSStackViewKVOContext = (void*)&DPSSStackViewKVOContext;
 }
 
 - (void)setup {
-    _lastSentIndex = -1;
-    _currentIndex = -1;
     self.inited = NO;
-    [self setupUI];
+    self.expansionResistance = [NSNumber numberWithFloat:200];
 }
 
 - (void)setupUI {
@@ -76,6 +72,7 @@ static void * const DPSSStackViewKVOContext = (void*)&DPSSStackViewKVOContext;
 - (void)setupHeaderContainerView {
     
     self.headerContainerView = [self headerContainer];
+    [self.headerContainerView layoutIfNeeded];
     // Header Container Method is not implemented yet
     if(self.headerContainerView == nil) {
         NSAssert(false, @"DPSSStackView's stackHeaderContainerForStackView method must be implemented");
@@ -91,6 +88,7 @@ static void * const DPSSStackViewKVOContext = (void*)&DPSSStackViewKVOContext;
     self.childeContainerView = [self tableViewContainer];
     if(self.childeContainerView == nil) {
         self.childeContainerView = [self tabViewContainer];
+        self.resistanceConsumed = [self tabViewContainer].tabBarHeight;
         id<DPTabViewDelegate>delegate = ((DPTabView *)self.childeContainerView).delegate;
         self.stackProxy = [DPSSStackViewProxy proxyWithMainDelegate:self other:@[delegate]];
     } else {
@@ -110,6 +108,13 @@ static void * const DPSSStackViewKVOContext = (void*)&DPSSStackViewKVOContext;
     CGFloat containerHeight = [self height] - margin;
     self.childeContainerView.frame = CGRectMake(0, margin, [self width], containerHeight);
     [self addSubview:self.headerContainerView];
+}
+
+#pragma mark Layout
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    [self setupUI];
+    self.inited = YES;
 }
 
 #pragma Setters methods
@@ -185,6 +190,15 @@ static void * const DPSSStackViewKVOContext = (void*)&DPSSStackViewKVOContext;
     return nil;
 }
 
+#pragma ---------------
+#pragma DPTabViewDelegate methods
 
+- (void)tabView:(DPTabView *)tabView didSelectView:(UIView *)view AtIndex:(NSInteger)index {
+    
+    if([view respondsToSelector:@selector(scrollViewDidScroll:)]) {
+        UIScrollView *slctdScrll = (UIScrollView *)view;
+        [self setCurrScrollView:slctdScrll];
+    }
+}
 
 @end

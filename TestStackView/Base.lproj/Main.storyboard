@@ -3,9 +3,10 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Data Source-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -16,8 +17,27 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dee-b1-B7R" customClass="DPSSStackView">
+                                <rect key="frame" x="20" y="0.0" width="560" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Vpi-br-5Mn"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="IJV-0M-eEe"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dee-b1-B7R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="0Ap-mI-uVT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dee-b1-B7R" secondAttribute="trailing" id="S8M-wS-7vJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dee-b1-B7R" secondAttribute="bottom" id="fku-6I-aqW"/>
+                            <constraint firstItem="Dee-b1-B7R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fwb-JU-w4a"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stackView" destination="Dee-b1-B7R" id="AGh-UO-ofH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

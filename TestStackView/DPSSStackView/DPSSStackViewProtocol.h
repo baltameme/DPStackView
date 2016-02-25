@@ -13,11 +13,6 @@
 
 @protocol DPSSStackViewDataSource <NSObject>
 
-/*!
- @brief Return a DPTabView instance used as a childe container
- */
-- (DPTabView *)tabViewChildeContainerForStackView:(DPSSStackView *)stackView;
-
 @optional
 
 /*!
@@ -26,30 +21,19 @@
 - (CGFloat)stackViewContainersMargin;
 
 /*!
- @brief Return number of child containters for DPSSStackView
- 
- @param stackView Refference to DPSSStackView
- */
-- (NSInteger)stackViewNumberOfContainers:(DPSSStackView *)stackView;
-
-/*!
- @brief Return number of child containters for DPSSStackView
- 
- @param stackView Refference to DPSSStackView
- @param index An Index of child containter
- */
-- (UIScrollView *)scrollView:(DPSSStackView *)stackView viewForIndex:(NSInteger)index;
-
-/*!
  @brief Return a UIView instance used as a header container
  */
 - (UIView *)stackHeaderContainerForStackView:(DPSSStackView *)stackView;
-
 
 /*!
  @brief Return a UITableView instance used as a childe container
  */
 - (UITableView *)tableViewChildeContainerForStackView:(DPSSStackView *)stackView;
+
+/*!
+ @brief Return a DPTabView instance used as a childe container
+ */
+- (DPTabView *)tabViewChildeContainerForStackView:(DPSSStackView *)stackView;
 
 @end
 

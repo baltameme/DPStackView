@@ -441,6 +441,20 @@
             [self.delegate tabView:self didSelectTabAtIndex:index];
         }
     }
+
+    // Pass selected
+    [self didSelectView:[self viewForIndex:index] AtIndex:index];
+}
+
+- (void)didSelectView:(UIView *)view AtIndex:(NSInteger)index {
+
+    if (self.delegate && [self.delegate respondsToSelector:@selector(tabView:didSelectView:AtIndex:)]) {
+        IDX_TEST(index)
+        if (self.lastSentIndex != index) {
+            self.lastSentIndex = index;
+            [self.delegate tabView:self didSelectView:view AtIndex:index];
+        }
+    }
 }
 
 - (CGFloat)tabBarHeight {
